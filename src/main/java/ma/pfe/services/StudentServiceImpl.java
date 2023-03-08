@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
 public class StudentServiceImpl implements StudentService{
-
     private final static Logger LOG= LoggerFactory.getLogger(StudentServiceImpl.class);
     @Override
     public Long create(StudentDTO dto) {
@@ -17,21 +16,18 @@ public class StudentServiceImpl implements StudentService{
         LOG.debug("end");
         return null;
     }
-
     @Override
     public boolean update(StudentDTO dto) {
         LOG.debug("start");
         LOG.debug("end");
         return false;
     }
-
     @Override
     public boolean delete(Long id) {
         LOG.debug("start");
         LOG.debug("end");
         return false;
     }
-
     @Override
     public List<StudentEntity> readAll() {
         LOG.debug("start");

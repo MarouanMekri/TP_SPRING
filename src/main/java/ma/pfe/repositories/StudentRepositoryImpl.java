@@ -7,9 +7,9 @@ import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
-public class StudentRepositoryImpl implements StudentRepository{
+public class StudentRepositoryImpl implements StudentRepository {
 
-    private final static Logger LOG= LoggerFactory.getLogger(StudentRepositoryImpl.class);
+    private final static Logger LOG = LoggerFactory.getLogger(StudentRepositoryImpl.class);
 
     @Override
     public Long create(StudentEntity e) {

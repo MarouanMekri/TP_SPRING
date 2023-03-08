@@ -10,10 +10,10 @@ public class ClassPFE {
     private final static Logger LOGGER= LoggerFactory.getLogger(ClassPFE.class);
     public static void main(String[] args) {
         SpringApplication.run(ClassPFE.class);
-        LOGGER.trace("start appli log 1");
-        LOGGER.debug("start appli log 2");
-        LOGGER.info("start appli log 3");
-        LOGGER.error("start appli log 4");
-        LOGGER.warn("start apli log 5");
+        LOGGER.trace("start log 1");
+        LOGGER.debug("start log 2");
+        LOGGER.info("start log 3");
+        LOGGER.error("start log 4");
+        LOGGER.warn("start log 5");
     }
 }

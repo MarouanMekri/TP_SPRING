@@ -11,22 +11,20 @@ import java.util.stream.Collectors;
 @Component
 public class StudentMapper {
     StudentDTO convertToDTO(StudentEntity entity){
-    StudentDTO studentDTO= new StudentDTO();
-    studentDTO.setName(entity.getName());
-    return studentDTO;
+        StudentDTO studentDTO = new StudentDTO();
+        studentDTO.setName(entity.getName());
+        return studentDTO;
     }
     StudentEntity convertToEntity(StudentDTO dto){
         StudentEntity studentEntity= new StudentEntity();
         studentEntity.setId(dto.getId());
         return studentEntity;
     }
-
     List<StudentEntity> convertToEntities(List<StudentDTO>dtos){
-        return dtos.stream().map(dto -> convertToEntity(dto)).collect(Collectors.toList());
+        return dtos.stream().map(this::convertToEntity).collect(Collectors.toList());
     }
     List<StudentDTO> convertToDtos(List<StudentEntity>entities){
-        return entities.stream().map(entity -> convertToDTO(entity)).collect(Collectors.toList());
-
+        return entities.stream().map(this::convertToDTO).collect(Collectors.toList());
     }
 
 }

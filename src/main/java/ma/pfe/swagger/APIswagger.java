@@ -8,7 +8,6 @@ import springfox.documentation.spring.web.plugins.Docket;
 
 @Configuration
 public class APIswagger {
-
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
